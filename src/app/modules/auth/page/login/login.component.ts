@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit {
     this.authService.login(credentials)
       .pipe(
         delay(5000),
-        tap(user => this.router.navigate(['/dashboard/home'])),
+        tap(user => this.router.navigate(['/home/home'])),
         finalize(() => this.isLoading = false),
         catchError(error => of(this.error = error))
       ).subscribe();
