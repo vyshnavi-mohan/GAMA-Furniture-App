@@ -30,11 +30,10 @@
      <!-- Right-sided navbar links. Hide them on small screens -->
      <div class="w3-right w3-hide-small">
         <a href="#about" class="w3-bar-item w3-button">About</a>
-        <a href="#menu" class="w3-bar-item w3-button">Items</a>
+        <a [routerLink]="['/furniture/list']" class="w3-bar-item w3-button">Items</a>
         <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-        <a href="cart" class="w3-bar-item w3-button">View Cart</a>
-        <a href="login" class="w3-bar-item w3-button">Login</a>
+        <a [routerLink]="['/login']" class="w3-bar-item w3-button">View Cart</a>
+        <a [routerLink]="['/login']" class="w3-bar-item w3-button">Login</a>
      </div>
   </div>
 </div>
-s

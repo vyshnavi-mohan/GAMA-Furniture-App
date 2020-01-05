@@ -6,16 +6,20 @@ import { SharedModule } from '@shared/shared.module';
 
 import { AuthRoutingModule } from './auth.routing';
 import { HomeComponent } from './page/home/home.component';
-import { NavComponent } from 'app/layout/nav/nav.component';
 import { FooterComponent } from 'app/layout/footer/footer.component';
+import { ItemComponent } from './page/item/item.component';
+import { AboutComponent } from '@modules/about/page/about/about.component';
+import { ContactComponent } from '@modules/contact/page/contact/contact.component';
 
 @NgModule({
   declarations: [
     LoginComponent,
     RegisterComponent,
     HomeComponent,
-    NavComponent,
-    FooterComponent
+    FooterComponent,
+    ItemComponent,
+    AboutComponent,
+    ContactComponent
 
   ],
   imports: [

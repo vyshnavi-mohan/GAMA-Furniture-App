@@ -2,13 +2,16 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { LoginComponent } from './page/login/login.component';
-import { RegisterComponent } from './page/register/register.component';
+import { RegisterComponent } from '@modules/auth/page/register/register.component';
 import { HomeComponent } from '@modules/auth/page/home/home.component';
+import { ItemComponent } from '@modules/auth/page/item/item.component';
+import { AboutComponent } from '@modules/about/page/about/about.component';
+import { ContactComponent } from '@modules/contact/page/contact/contact.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/auth/login',
+    redirectTo: '/auth/home',
     pathMatch: 'full'
   },
   {
@@ -19,13 +22,25 @@ const routes: Routes = [
         component: LoginComponent
       },
       {
-        path: 'register',
+        path: 'signup',
         component: RegisterComponent
       },
       {
-        path: 'front',
+        path: 'home',
         component: HomeComponent
-      }
+      },
+      {
+        path: 'item',
+        component: ItemComponent
+      },
+      {
+        path: 'about',
+        component: AboutComponent
+      },
+      {
+        path: 'contact',
+        component: ContactComponent
+      },
     ]
   }
 ];

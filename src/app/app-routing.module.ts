@@ -16,7 +16,7 @@ const routes: Routes = [
     canActivate: [NoAuthGuard], // Should be replaced with actual auth guard
     children: [
       {
-        path: 'home',
+        path: 'page',
         loadChildren: () =>
           import('@modules/home/home.module').then(m => m.HomeModule)
       },
@@ -31,9 +31,9 @@ const routes: Routes = [
           import('@modules/contact/contact.module').then(m => m.ContactModule)
       },
       {
-        path: 'cart',
+        path: 'furniture',
         loadChildren: () =>
-          import('@modules/contact/contact.module').then(m => m.ContactModule)
+          import('@modules/furniture/furniture.module').then(m => m.FurnitureModule)
       }
     ]
   },

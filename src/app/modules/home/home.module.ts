@@ -9,12 +9,15 @@ import { SharedModule } from '@shared/shared.module';
 import { ProjectItemComponent } from './page/project-item/project-item.component';
 import { ProjectDetailsComponent } from './page/project-details/project-details.component';
 
+
+
 @NgModule({
     declarations: [
         HomeComponent,
         MyModalComponent,
         ProjectItemComponent,
         ProjectDetailsComponent
+        
     ],
     imports: [
         SharedModule,
