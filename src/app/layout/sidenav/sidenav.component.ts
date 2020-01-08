@@ -1,4 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { LISTS } from './list-array';
 
 @Component({
   selector: 'app-sidenav',
@@ -7,6 +8,8 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SidenavComponent implements OnInit {
+
+  lists = LISTS;
 
   constructor() { }
 

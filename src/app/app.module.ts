@@ -11,8 +11,6 @@ import { ContentLayoutComponent } from './layout/content-layout/content-layout.c
 import { AuthModule } from '@modules/auth/auth.module';
 import { AuthLayoutComponent } from './layout/auth-layout/auth-layout.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SidenavComponent } from './layout/sidenav/sidenav.component';
-
 import { NavComponent } from './layout/nav/nav.component';
 
 @NgModule({
@@ -20,7 +18,6 @@ import { NavComponent } from './layout/nav/nav.component';
     AppComponent,
     ContentLayoutComponent,
     AuthLayoutComponent,
-    SidenavComponent,
     NavComponent
   ],
   imports: [
@@ -36,8 +33,6 @@ import { NavComponent } from './layout/nav/nav.component';
 
     // app
     AppRoutingModule,
-
- 
 
     BrowserAnimationsModule
   ],

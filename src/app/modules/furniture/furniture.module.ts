@@ -4,13 +4,19 @@ import { FurnitureListComponent } from './furniture-list/furniture-list.componen
 import { FurnitureDetailsComponent } from './furniture-details/furniture-details.component';
 import { FurnitureRoutingModule } from './furniture.routing';
 import { FurnitureComponent } from './furniture.component';
+import { SidenavComponent } from 'app/layout/sidenav/sidenav.component';
+import { CartComponent } from './cart/cart.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 @NgModule({
   declarations: [
   FurnitureListComponent,
   FurnitureDetailsComponent,
-  FurnitureComponent
+  FurnitureComponent,
+  SidenavComponent,
+  CartComponent,
+  CheckoutComponent
 ],
   imports: [
     CommonModule,
