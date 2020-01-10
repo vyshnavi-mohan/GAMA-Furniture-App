@@ -1,35 +1,8 @@
-<!-- <div class="wrapper">
-  <div class="toolbar">
-    <mat-toolbar color="primary">
-      <div class="container">
-        <span routerLink="" class="branding spacer center d-none d-sm-inline d-md-none">
-          {{ 'Angular Folder Structure' }}
-        </span>
-        <span routerLink="" class="branding spacer d-none d-md-inline">
-          {{ 'Angular Folder Structure' }}
-        </span>
-        <span class="d-none d-md-inline">
-          <button mat-button class="nav-button" *ngFor="let item of navItems" [routerLink]="[item.link]"
-            routerLinkActive="active">
-            {{ item.title }}
-          </button>
-
-          <mat-slide-toggle [checked]="isDarkTheme$ | async" (change)="toggleTheme($event.checked)">Toggle Theme</mat-slide-toggle>
-        </span>
-        <div style="float: right;">
-          <a [href]="repoUrl" target="_blank">Logout <fa-icon [icon]="['fab','github']"></fa-icon></a>
-        </div>
-      </div>
-    </mat-toolbar>
-  </div>
-</div> -->
-<!-- Navbar (sit on top) -->
 <div class="w3-top">
-    <div id="ex4">
-  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-     <a [routerLink]="['/auth/home']" class="w3-bar-item w3-button">Elegant Interiors</a>
-     <!-- Right-sided navbar links. Hide them on small screens -->
-     <div class="w3-right w3-hide-small">
+  <div id="ex4">
+    <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+      <a [routerLink]="['/auth/home']" class="w3-bar-item w3-button">Elegant Interiors</a>
+      <div class="w3-right w3-hide-small">
         <a [routerLink]="['/auth/about']" class="w3-bar-item w3-button">About</a>
         <a [routerLink]="['/furniture']" class="w3-bar-item w3-button">Items</a>
         <a [routerLink]="['/auth/contact']" class="w3-bar-item w3-button">Contact</a>
@@ -38,7 +11,7 @@
           <i class="p3 fa fa-shopping-cart fa-stack-1x xfa-inverse" data-count="4b"></i>
         </a>
         <a [routerLink]="['/login']" class="w3-bar-item w3-button">Login</a>
-     </div>
+      </div>
+    </div>
   </div>
-</div>
 </div>

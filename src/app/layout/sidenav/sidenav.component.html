@@ -1,16 +1,15 @@
 <section class="app">
-        <aside class="sidebar">
-            <header>
-                Elagant Interiors
-            </header>
-            <nav class="sidebar-nav">
-   
-                <ul>
-                    <li *ngFor="let list of lists">
-                        <a [routerLink]="['/furniture/flist']"><i class="fa fa-hand-point-right"></i> <span>{{list.category}}</span></a>
-                    </li>
-   
-                </ul>
-            </nav>
-        </aside>
-    </section>
+    <aside class="sidebar">
+        <header>
+            Elagant Interiors
+        </header>
+        <nav class="sidebar-nav">
+            <ul>
+                <li *ngFor="let list of lists">
+                    <a [routerLink]="['/furniture/list']"><i class="fa fa-hand-point-right"></i>
+                        <span>{{list.category}}</span></a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+</section>

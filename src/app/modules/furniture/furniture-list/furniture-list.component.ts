@@ -1,5 +1,6 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { Router } from '@angular/router';
+import { FurnitureApiService } from '@shared/service/furniture-api.service';
 
 @Component({
   selector: 'app-furniture-list',
@@ -9,10 +10,15 @@ import { Router } from '@angular/router';
 })
 export class FurnitureListComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router:Router,
+    private api: FurnitureApiService) { 
+  }
 
   ngOnInit() {
+
   }
+
+  furniturelist  = this.api.getAllFurniture().pipe();
 
   login(){
     this.router.navigate(['login']);
